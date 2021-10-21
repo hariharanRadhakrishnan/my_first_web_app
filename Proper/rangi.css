@@ -1,0 +1,262 @@
+div#title
+{
+	position:fixed;
+	top:10%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	opacity:0.2;
+	background-color:gray;
+	z-index:2;
+}
+p#titlep
+{
+	position:fixed;
+	top:11%;
+	text-align:left;
+	margin:1%;
+	font-size:20pt;
+	font-family:'Courier New';
+	color:red;
+	background-color:black;1
+	opacity:0.6;
+	border-radius:5%;
+	z-index:2;
+	display:inline;
+}
+span#titlep2
+{
+	font-size:14pt;
+	font-family:Verdana;
+	color:red;
+}
+div#menu
+{
+	position:fixed;
+	top:0%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	background-color:black ;
+	z-index:2;
+}
+#loginName
+{
+	color:white;
+	dispaly:inline;
+	position:fixed;
+	top:2%;
+	right:15%;
+}
+#login
+{
+	position:fixed;
+	top:2%;
+	right:9%;
+	color:white;
+	background-color:maroon;
+	border:2px solid maroon;
+	border-radius:2%;
+	dispaly:inline;
+}
+#signUp
+{
+	position:fixed;
+	top:2%;
+	right:4%;
+	border:2px solid maroon;
+	border-radius:2%;
+	background-color:maroon;
+	
+	color:white;
+	dispaly:inline;
+}
+#menup
+{
+	position:fixed;
+	left:2.5%;
+	top:-4%;
+	padding-bottom:1.2%;
+	padding-top:1.2%;
+	padding-left:1%;
+	padding-right:1%;
+	text-align:left;
+	font-size:20pt;
+	color:white;
+	display:inline;
+	
+	
+}
+#menup:hover
+{
+	background-color:white;
+	color:maroon;
+	font-size:22pt;
+	text-decoration:underline;
+	transition: font-size , ease-in 1s;
+	
+}
+div#guide
+{
+	border:solid black 1px;
+	position:absolute;
+	top:175%;
+	left:0%;
+	right:0%;
+	width:100%;
+	height:60%;
+	background-color:#700000 ;
+	
+}
+.lastElements
+{
+	color:white;
+	font-size:16pt;
+	font-weight:bold;
+}
+.info
+{
+	font-weight:normal;
+	color:white;
+	font-size:12pt;
+}
+#comingSoon
+{
+	position:absolute;
+	top:30%;
+	left:10%;
+}
+#recomendation
+{
+	position:absolute;
+	top:30%;
+	right:10%;
+}
+#contact
+{
+	position:absolute;
+	top:60%;
+	left:10%;
+}
+#feedback
+{
+	position:absolute;
+	top:60%;
+	right:10%;
+}
+#logo
+{
+	position:absolute;
+	top:85%;
+	left:42%;
+	display:inline;
+	background-color:black;
+	color:red;
+	text-align:center;
+	font-size:20pt;
+	z-index:1;
+	font-family:'Courier New';
+}
+#logohr
+{
+	position:relative;
+	top:95%;
+	left:0%;
+}
+#rangitaranga
+{
+	position:absolute;
+	left:3%;
+	top:20%;
+	width:40%;
+	height:90%;
+	z-index:1;
+}
+div#descriptionDiv
+{
+	position:absolute;
+	top:20%;
+	height:90%;
+	width:100%;
+	background-color:orange;
+	opacity:0.7;
+}
+p#Description
+{
+	position:absolute;
+	top:25%;
+	color:white;
+	right:0%;
+	height:65%;
+	width:54%;
+	font-size:16pt;
+	font-family:Verdana;
+	background-color:black;
+	opacity:0.7;
+	padding:2%;
+	padding-left:20%;
+}
+span#heading
+{
+	font-size:20pt;
+	text-decoration:underline;
+	font-weight:bold;
+	margin:5px;
+}
+div#review
+{
+	position:absolute;
+	top:120%;
+	width:100%;
+	height:20%;
+	background-color:orange;
+}
+div#rating
+{
+	position:absolute;
+	top:150%;
+	width:100%;
+	height:20%;
+	background-color:orange;
+}
+div#review p
+{
+	font-size:20pt;
+	font-family:'Times New Roman';
+	background-color:white;
+	opacity:0.8;
+	heigth:25%;
+	color:black;
+}
+div#rating p
+{
+	font-size:20pt;
+	font-family:'Times New Roman';
+	background-color:white;
+	heigth:25%;
+	opacity:0.8;
+	color:black;
+}
+#bookNow
+{
+	position:absolute;
+	top:103%;
+	left:18%;
+	text-align:center;
+	background-color:black;
+	color:white;
+	border-width:3%;
+	border-style:ridge;
+	border-color:orange;
+	font-size:20pt;
+	border-radius:5%;
+	font-family:'Andale Mono';
+	z-index:1;
+}
+#bookNow:hover
+{
+	background-color:white;
+	color:black;
+}

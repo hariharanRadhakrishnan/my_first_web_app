@@ -1,0 +1,244 @@
+div#title
+{
+	position:fixed;
+	top:10%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	opacity:0.2;
+	background-color:gray;
+	z-index:1;
+}
+p#titlep
+{
+	position:fixed;
+	top:11%;
+	text-align:left;
+	margin:1%;
+	font-size:20pt;
+	font-family:'Courier New';
+	color:red;
+	background-color:black;1
+	opacity:0.6;
+	border-radius:5%;
+	z-index:1;
+	display:inline;
+}
+span#titlep2
+{
+	font-size:14pt;
+	font-family:Verdana;
+	color:red;
+}
+#eventInfo
+{
+	position:absolute;
+	top:65%;
+	height:5%;
+	width:80%;
+	right:10%;
+	color:white;
+	display:inline;
+	font-weight:bold;
+	font-size:16pt;
+	font-family:Sherif;
+	text-align:center;
+	background-color:black;
+	opacity:0.7;
+	
+	
+}
+div#menu
+{
+	position:fixed;
+	top:0%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	background-color:black ;
+	z-index:1;
+}
+#loginName
+{
+	color:white;
+	dispaly:inline;
+	position:fixed;
+	top:2%;
+	right:15%;
+}
+#login
+{
+	position:fixed;
+	top:2%;
+	right:9%;
+	color:white;
+	background-color:maroon;
+	border:2px solid maroon;
+	border-radius:2%;
+	dispaly:inline;
+}
+#signUp
+{
+	position:fixed;
+	top:2%;
+	right:4%;
+	border:2px solid maroon;
+	border-radius:2%;
+	background-color:maroon;
+	
+	color:white;
+	dispaly:inline;
+}
+#bookNowButton
+{
+	position:absolute;
+	top:50%;
+	right:10%;
+	width:10%;
+	height:5%;
+	border-width:5px;
+	border-color:orange;
+	background-color:green;
+	color:maroon;
+	border-style:outset;
+	border-radius:40%;
+	
+}
+ul#menuul
+{
+	position:fixed;
+	right:4%;
+	left:4%;
+}
+ul#menuul li
+{
+	padding-left:3%;
+	padding-right:3%;
+	margin-left:0.5%;
+	margin-right:0.5%;
+	padding-top:1.4%;
+	padding-bottom:1.5%;
+	font-size:18pt;
+	display:inline;
+	color:white;
+	list-style-type:none;
+}
+ul#menuul li:hover
+{
+	background-color:white;
+	color:maroon;
+	height:10%;
+	font-size:20pt;
+	transition:font-size ,ease-in 0.5s;
+	
+}
+#top
+{
+	position:relative;
+	left:13%;
+	list-style-type:none;
+	font-size:22pt;
+	font-family:'Comic Sans MS';
+	color:maroon;
+}
+hr
+{
+	position:relative;
+	left:-8%;
+	color:white;
+}
+div#guide
+{
+	border:solid black 1px;
+	position:absolute;
+	top:60%;
+	left:0%;
+	right:0%;
+	width:100%;
+	height:60%;
+	background-color:#700000 ;
+}
+#eventList
+{
+	width:80%;
+	height:60%;
+	position:absolute;
+	right:10%;
+	left:10%;
+	top:13%;
+	border-radius:5%;	
+}
+#contactUs
+{
+	position:absolute;
+	top:80%;
+	right:10%;
+	width:45%;
+	height:20%;
+}
+#contactUs p
+{
+	padding:5%;
+	border:outset orange 5px;
+	background-color:black;
+	color:white;
+	margin-left:2%;
+	margin-right:2%;
+}
+.lastElements
+{
+	color:white;
+	font-size:16pt;
+	font-weight:bold;
+}
+.info
+{
+	font-weight:normal;
+	color:white;
+	font-size:12pt;
+}
+#comingSoon
+{
+	position:absolute;
+	top:30%;
+	left:10%;
+}
+#recomendation
+{
+	position:absolute;
+	top:30%;
+	right:10%;
+}
+#contact
+{
+	position:absolute;
+	top:60%;
+	left:10%;
+}
+#feedback
+{
+	position:absolute;
+	top:60%;
+	right:10%;
+}
+#logo
+{
+	position:absolute;
+	top:85%;
+	left:42%;
+	display:inline;
+	background-color:black;
+	color:red;
+	text-align:center;
+	font-size:20pt;
+	z-index:1;
+	font-family:'Courier New';
+}
+#logohr
+{
+	position:relative;
+	top:95%;
+	left:0%;
+}

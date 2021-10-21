@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+﻿<html>
+	<head>
+		<title>HaveASeat</title>
+		<link type="text/css"  rel="stylesheet" href="styleIndex.css"/>
+		 
+	</head>
+	<body>
+		<div id="main">		
+			<div id="title"></div>
+			<p id="titlep">Have A Seat <span id="titlep2">#ChooseWisely</span></p>
+			
+			<div id="menu" >
+				<ul id="menuul">
+					<a href="MovieList.html"><li id="movieMenu">Movie</li></a>
+					<a href="Plays.html"><li>Plays</li></a>
+					<a href="Sports.html"><li>Sports</li></a>
+					<a href="Events.html"><li>Events</li></a>
+				</ul>
+				<p id="loginName">Welcome Guest!</p>
+				<p id="login">Login</p><p id="signUp">Sign Up</p>
+			</div>
+			<div id="guide">
+				<p id="comingSoon" class="lastElements">Coming Soon<br><span class="info">IRONMAN-3, GODFATHER-5, AVENGERS-2</span></p>
+				<p id="recomendation" class="lastElements">Recomendations<br><span class="info">THOR, STAR TREK, To Kill A Mocking Bird</span></p>
+				<p id="contact" class="lastElements">Contact Us<br><span class="info">Phone: 80-23456781<br>email To: haveASeat@gmail.com</span></p>
+				<p id="feedback" class="lastElements">Please Do give Your Feedback!</p>
+				<hr id="logohr">
+				<p id="logo">HaveASeat.com</p>
+			</div>
+			<canvas id="eventList" width="510" height="270">
+			</canvas>
+			<p id="eventInfo">All Events Through-out Bangalore!</p>
+			<script>
+				cav = document.getElementById("eventList")
+				ctx = cav.getContext("2d")
+				
+				var count = 0
+				function draw()
+				{
+					var p = document.getElementById("eventInfo")
+					
+					
+					switch(count)
+					{
+						case 0: ctx.clearRect(0,0,510,270)
+							var img1 = new Image()//document.createElement("img")
+							img1.setAttribute("src","MSS1.jpg")
+							ctx.drawImage(img1,0,0,170,270)
+							var img2 = new Image()//document.createElement("img")
+							img2.setAttribute("src","MSS2.jpg")
+							ctx.drawImage(img2,170,0,170,270)
+							var img3 = new Image()//document.createElement("img")
+							img3.setAttribute("src","MSS3.jpg")
+							ctx.drawImage(img3,340,0,170,270)
+							count++
+							break;
+						case 1: ctx.clearRect(0,0,510,270)
+							var img4 = new Image()//document.createElement("img")
+							img4.setAttribute("src","ISL.jpg")
+							ctx.drawImage(img4,0,0,170,270)
+							var img10 = new Image()//document.createElement("img")
+							img10.setAttribute("src","proKabbadi.jpg")
+							ctx.drawImage(img10,171,0,170,270)
+							var img12 = new Image()//document.createElement("img")
+							img12.setAttribute("src","IPL.jpg")
+							ctx.drawImage(img12,343,0,170,270)
+							count++
+							break;
+
+						case 2:	ctx.clearRect(0,0,510,270)
+							var img5 = new Image()//document.createElement("img")
+							img5.setAttribute("src","IO1.jpg")
+							ctx.drawImage(img5,0,0,255,270)
+							var img6 = new Image()//document.createElement("img")
+							img6.setAttribute("src","IO2.jpg")
+							ctx.drawImage(img6,255,0,255,270)
+							count++
+							break;
+
+						case 3:	ctx.clearRect(0,0,510,270)
+							var img7 = new Image()//document.createElement("img")
+							img7.setAttribute("src","noha.jpg")
+							ctx.drawImage(img7,0,0,127,270)
+							var img8 = new Image()//document.createElement("img")
+							img8.setAttribute("src","Thor.jpg")
+							ctx.drawImage(img8,128,0,127,270)
+							var img16 = new Image()//document.createElement("img")
+							img16.setAttribute("src","StarTrek.jpg")
+							ctx.drawImage(img16,256,0,127,270)
+							var img17 = new Image()//document.createElement("img")
+							img17.setAttribute("src","DarkKnight.jpg")
+							ctx.drawImage(img17,384,0,127,270)
+							count++;
+							break;
+						case 4:	ctx.clearRect(0,0,510,270)
+							var img9 = new Image()//document.createElement("img")
+							img9.setAttribute("src","play1.jpg")
+							ctx.drawImage(img9,0,0,127,270)
+							var img13 = new Image()//document.createElement("img")
+							img13.setAttribute("src","play2.jpg")
+							ctx.drawImage(img13,128,0,127,270)
+							var img14 = new Image()//document.createElement("img")
+							img14.setAttribute("src","play3.jpg")
+							ctx.drawImage(img14,256,0,127,270)
+							var img15 = new Image()//document.createElement("img")
+							img15.setAttribute("src","play4.jpg")
+							ctx.drawImage(img15,384,0,127,270)
+							count = 0;
+							break;
+						default: break;
+
+					}
+				}
+				draw()
+				interval = setInterval("draw()",4000)	
+			</script>
+			
+		</div>
+	</body>
+</html>

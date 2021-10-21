@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="styleIndex.css"/>
+			<title> HaveASeat - Sign up</title>
+	</head>
+
+	<body>
+		<div id="main">		
+			<div id="title"></div>
+			<p id="titlep">Have A Seat <span id="titlep2">#ChooseWisely</span></p>
+			
+			<div id="menu" >
+				<ul id="menuul">
+					<li id="movieMenu">Movie</li>
+					<li>Plays</li>
+					<li>Sports</li>
+					<li>Events</li>
+				</ul>
+			</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div  style="background-color:#700000;color:white" id="form"><h1 align="center">Fill up your details to sign up for free!!</h1>
+		
+			<form id="form" style="background-color:#700000;color:white;font-weight:bold;" method="POST" action="signup.php" align="center" target="blank">
+					<label>First Name:	</label><input type="text" name="fname" id="name1"/><br/><br/>
+					<label>Last Name:	</label><input type="text" name="lname" id="name2"/><br/><br/>
+					<label>Age:	</label><input type="number" name="age" id="age"/><br/><br/>
+					<label>Email ID:	</label><input type="text" name="email" id="em"/><br/><br/>
+					<label>Mobile Number:	<b>+91</b></label><input type="text" name="mob" id="mn" maxlength="10"/><br/><br/>
+					<label>Sex:		</label><input type="radio" name="sex" value="male" checked="checked"/><label>Male</label><input type="radio" name="sex" value="female"/><label>Female</label><br/><br/>
+					<label>New Password:	</label><input type="password" name="paswrd1" maxlength="13" id="pw1"/><br><br>
+					<label>Confirm New Password:	</label><input type="password" name="paswrd2" maxlength="13" id="pw2"/><br><br>
+					<input type="submit"/>
+					<input type="reset" value="Clear"/>
+			</form></div>
+	</body>
+
+	<script type="text/javascript">
+				document.getElementById('form').onsubmit=verify
+				function verify()
+				{
+					var fn=document.getElementById("name1").value
+					var ln=document.getElementById("name2").value
+					var age=document.getElementById('age').value
+					var em=document.getElementById("em").value
+					var mob=document.getElementById("mn").value
+					var p1=document.getElementById("pw1").value
+					var p2=document.getElementById("pw2").value
+					var success=true
+
+					if(!fn || !ln || !age || !mob || !p1 || !p2 || !em)
+					{
+						alert('Do not leave any fields blank!')
+						return false
+					}
+					for(var i in fn)
+					{
+						if('A'.charCodeAt(0)>fn.toUpperCase().charCodeAt(i) || 'Z'.charCodeAt(0)<fn.toUpperCase().charCodeAt(i))
+						{
+							alert('First name must have only alphabets!!')
+							return false
+						}
+					}
+					for(var i in ln)
+					{
+						if('A'.charCodeAt(0)>ln.toUpperCase().charCodeAt(i) || 'Z'.charCodeAt(0)<ln.toUpperCase().charCodeAt(i))
+						{
+							alert('Last name must have only alphabets!!')
+							return false
+						}
+					}
+					if(age<1)
+					{
+						alert('Invalid age')
+						return false
+					}
+					if(mob.length==10)
+					{
+						for(var i in mob)
+						{
+							if('0'.charCodeAt(0)> mob.charCodeAt(i) || '9'.charCodeAt(0)<mob.charCodeAt(i))
+							{
+								alert('Invalid mobile number!!')
+								return false
+							}
+						}
+					}
+					else
+					{
+						alert('Invalid mobile number!!')
+						return false
+					}
+					if(p1.length<8)
+					{
+						alert('Password must be at least 8 characters long')
+						return false
+					}
+					if(p1!==p2)
+					{
+						alert('Entered passwords don\'t match!!')
+						return false
+					}
+					
+					alert('Account created successfully!!')
+					//open('index.html')
+					return true
+				}
+			</script>
+
+</html>

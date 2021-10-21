@@ -1,0 +1,276 @@
+div#title
+{
+	position:fixed;
+	top:10%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	opacity:0.2;
+	background-color:gray;
+	z-index:1;
+}
+p#titlep
+{
+	position:fixed;
+	top:11%;
+	text-align:left;
+	margin:1%;
+	font-size:20pt;
+	font-family:'Courier New';
+	color:red;
+	background-color:black;1
+	opacity:0.6;
+	border-radius:5%;
+	z-index:1;
+	display:inline;
+}
+span#titlep2
+{
+	font-size:14pt;
+	font-family:Verdana;
+	color:red;
+}
+div#menu
+{
+	position:fixed;
+	top:0%;
+	right:0%;
+	left:0%;
+	width:100%;
+	height:10%;
+	background-color:black ;
+	z-index:1;
+}
+#loginName
+{
+	color:white;
+	dispaly:inline;
+	position:fixed;
+	top:2%;
+	right:15%;
+}
+#login
+{
+	position:fixed;
+	top:2%;
+	right:9%;
+	color:white;
+	background-color:maroon;
+	border:2px solid maroon;
+	border-radius:2%;
+	dispaly:inline;
+}
+#signUp
+{
+	position:fixed;
+	top:2%;
+	right:4%;
+	border:2px solid maroon;
+	border-radius:2%;
+	background-color:maroon;
+	
+	color:white;
+	dispaly:inline;
+}
+#menup
+{
+	position:fixed;
+	left:2.5%;
+	top:-4%;
+	padding-bottom:1.2%;
+	padding-top:1.2%;
+	padding-left:1%;
+	padding-right:1%;
+	text-align:left;
+	font-size:20pt;
+	color:white;
+	display:inline;
+	
+	
+}
+#menup:hover
+{
+	background-color:white;
+	color:maroon;
+	font-size:22pt;
+	text-decoration:underline;
+	transition: font-size , ease-in 1s;
+	
+}
+#kannadaMovie
+{
+	background-color:orange;
+
+}
+#rangitaraga
+{
+	position:absolute;
+	top:35%;
+	left:30%;
+	width:20%;
+	height:50%;
+}
+#kendasampige
+{
+	position:absolute;
+	top:35%;
+	left:51%;
+	width:20%;
+	height:50%;
+}
+#leela
+{
+	position:absolute;
+	top:115%;
+	left:62%;
+	width:20%;
+	height:50%;
+}
+#tevar
+{
+	position:absolute;
+	top:115%;
+	left:20%;
+	width:20%;
+	height:50%;
+}
+#baby
+{
+	position:absolute;
+	top:115%;
+	left:41%;
+	width:20%;
+	height:50%;
+}
+#spy
+{
+	position:absolute;
+	top:195%;
+	left:28%;
+	width:20%;
+	height:50%;
+}
+#madmax
+{
+	position:absolute;
+	top:195%;
+	left:50%;
+	width:20%;
+	height:50%;
+}
+#kannada
+{
+	font-size:20pt;
+	font-weight:bold;
+	text-decoration:underline;
+	font-family:'Times New Roman';
+	position:absolute;
+	top:15%;
+	text-align:center;
+	width:100%;
+	height:5%;
+	background-color:orange;
+	color:black;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+#hindi
+{
+	font-size:20pt;
+	font-weight:bold;
+	text-decoration:underline;
+	font-family:'Times New Roman';
+	position:absolute;
+	top:95%;
+	text-align:center;
+	width:100%;
+	height:5%;
+	background-color:orange;
+	color:black;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+#english
+{
+	font-size:20pt;
+	font-weight:bold;
+	text-decoration:underline;
+	font-family:'Times New Roman';
+	position:absolute;
+	top:175%;
+	text-align:center;
+	width:100%;
+	height:5%;
+	background-color:orange;
+	color:black;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+div#guide
+{
+	border:solid black 1px;
+	position:absolute;
+	top:225%;
+	left:0%;
+	right:0%;
+	width:100%;
+	height:60%;
+	background-color:#700000 ;
+	
+}
+.lastElements
+{
+	color:white;
+	font-size:16pt;
+	font-weight:bold;
+}
+.info
+{
+	font-weight:normal;
+	color:white;
+	font-size:12pt;
+}
+#comingSoon
+{
+	position:absolute;
+	top:30%;
+	left:10%;
+}
+#recomendation
+{
+	position:absolute;
+	top:30%;
+	right:10%;
+}
+#contact
+{
+	position:absolute;
+	top:60%;
+	left:10%;
+}
+#feedback
+{
+	position:absolute;
+	top:60%;
+	right:10%;
+}
+#logo
+{
+	position:absolute;
+	top:85%;
+	left:42%;
+	display:inline;
+	background-color:black;
+	color:red;
+	text-align:center;
+	font-size:20pt;
+	z-index:1;
+	font-family:'Courier New';
+}
+#logohr
+{
+	position:relative;
+	top:95%;
+	left:0%;
+}

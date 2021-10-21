@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+			<link rel="stylesheet" type="text/css" href="styleIndex.css"/>
+			<title> HaveASeat - Login</title>
+	</head>
+
+	<body>
+		<div id="main">		
+			<div id="title"></div>
+			<p id="titlep">Have A Seat <span id="titlep2">#ChooseWisely</span></p>
+			
+			<div id="menu" >
+				<ul id="menuul">
+					<li id="movieMenu">Movie</li>
+					<li>Plays</li>
+					<li>Sports</li>
+					<li>Events</li>
+				</ul>
+			</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+		<div  style="background-color:#700000;color:white" id="form"><h1 align="center">Enter details to login</h1>
+		
+			<form id="form" style="background-color:#700000;color:white;font-weight:bold;" method="GET" action="signin.php" align="center">
+					<label>Email ID:	</label><input type="text" name="email" id="em"/><br/><br/>
+					<label>Password:	</label><input type="password" name="password" maxlength="13" id="pw"/><br><br>
+					<input type="submit" value="Login"/>
+					<input type="reset" value="Clear"/>
+			</form></div>
+	</body>
+
+	<script type="text/javascript">
+				document.getElementById('form').onsubmit=verify
+				function verify()
+				{
+					var em=document.getElementById("em").value
+					var p=document.getElementById("pw2").value
+					
+					if(!p || !em)
+					{
+						alert('Do not leave any fields blank!')
+						return false
+					}					
+					//open('index.html')
+					return true
+				}
+			</script>
+
+</html>

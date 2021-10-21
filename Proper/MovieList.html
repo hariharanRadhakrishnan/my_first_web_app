@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>HaveASeat-MovieList</title>
+		<link rel="stylesheet" href="MovieList.css"/>
+	</head>
+	<body>
+		<div id="menu">
+				<p id="menup">Movie List of Now Running!</p>
+				<p id="loginName">Welcome Guest!</p>
+				<p id="login">Login</p><p id="signUp">Sign Up</p>
+		</div>
+		<div id="title"></div>
+		<p id="titlep">Have A Seat <span id="titlep2">#ChooseWisely</span></p>
+		<div id="guide">
+				<p id="comingSoon" class="lastElements">Coming Soon<br><span class="info">IRONMAN-3, GODFATHER-5, AVENGERS-2</span></p>
+				<p id="recomendation" class="lastElements">Recomendations<br><span class="info">THOR, STAR TREK, To Kill A Mocking Bird</span></p>
+				<p id="contact" class="lastElements">Contact Us<br><span class="info">Phone: 80-23456781<br>email To: haveASeat@gmail.com</span></p>
+				<p id="feedback" class="lastElements">Please Do give Your Feedback!</p>
+				<hr id="logohr">
+				<p id="logo">HaveASeat.com</p>
+		</div>
+		<div id="list">
+			<p id="kannada">KANNADA MOVIES</p>
+			<p id="Hindi">HINDI MOVIES</p>
+			<p id="ENGLISH">ENGLISH MOVIES</p>
+			<a href="rangitaranga.html"><img id ="rangitaraga" src="RangiTaranga.jpg" alt="Rangitaranaga"/></a>
+			<a href="kendasampige.html"><img id = "kendasampige" src="KendaSampige.jpg" alt="KendaSampige"/></a>
+			<a href="baby.html"><img id ="baby" src="baby.jpg" alt="baby"/></a>
+			<a href="tevar.html"><img id = "tevar" src="tevar.jpg" alt="tevar"/></a>
+			<a href="leela.html"><img id = "leela" src="leela.jpg" alt="leela"/></a>
+			<a href="spy.html"><img id ="spy" src="spy.jpg" alt="spy"/></a>
+			<a href="madmax.html"><img id = "madmax" src="madmax.jpg" alt="madmax"/></a>
+		</div>
+		<script>
+			var img = document.images ;
+			for(var i=0;i<img.length;i++)
+			{
+				img[i].onmouseover = zoomIn;
+				img[i].onmouseout = zoomOut;
+			}
+			function zoomIn()
+			{
+				this.style.width  = "22%";
+				this.style.height = '55%';
+				this.style.left=""+(parseInt(this.style.left)-2)+'%';
+				this.style.zIndex = '1';
+				this.style.transition = "width, ease-in 0.5s"
+				this.style.transition = "height, ease-in 0.5s"
+			}
+			function zoomOut()
+			{
+				this.style.width = '20%';
+				this.style.height = '50%';
+				this.style.left=""+(parseInt(this.style.left)+2)+'%';;
+				this.style.zIndex = '0';
+				this.style.transition = "width, ease-out 0.5s"
+				this.style.transition = "height, ease-out 0.5s"
+			}
+		</script>
+		
+	</body>
+</html>
